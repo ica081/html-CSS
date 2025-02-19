@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            background-color: lightgray;
+        
+            border: 10px solid darkslategray;
+            
+            padding: 10px;
+
+            margin: auto;
+            
+            outline: 5px dashed salmon;
+            
+            /*
+            Não é necessário colocar varios paddings, borders, margins e outros, para largura e altura ou outras configurações. Basta só um com cada identificação em sentido horário (padding: 10px, 5px, 15px, 10px,), começando do topo e depois direita, baixo e esquerda.
+
+            Se todos os lados e tiverem o mesmo valor, basta colocar somente um valor (padding: 10px).
+
+            E se precisar deixar o topo e baixo no mesmo valor e também os lados de outro valor igual, basta indicar dois valores, que o primeiro vai ser a altura e baixo, e o segundo os lados (padding: 10px 20px;).
+            */
+        }
+
+        a{ /*inline-level*/
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caxa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

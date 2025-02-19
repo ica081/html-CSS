@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta</title>
+    <style>
+        /* Imagem do espaço como fundo cobrindo toda a tela */
+        .image-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que o espaço cubra toda a tela */
+        }
+
+        /* Astronauta centralizado */
+        .astronauta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px; /* Ajuste para controlar o tamanho do astronauta */
+            transform: translate(-3000%, -50%); /* Centraliza a imagem */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="espaco.jpg" alt="Imagem do espaço">
+        
+    </div>
+
+    <div class="astronauta">
+        <img src="astronauta.png" alt="Astronauta" >
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'passion one';
+    src: url('PassionOne-Bold.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sriracha';
+    src: url('Sriracha-Regular.ttf') format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+h1 {
+    font-family: passion one;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 7px;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: passion one;
+    color: white;
+    text-align: center;
+    
+}
+
+p {
+    font-family: sriracha;
+    text-indent: 17px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+.cabecalho {
+    background: black;
+    margin: -25px -9px 25px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 0%; /* Ajusta a posição vertical */
+    left: 0%; /* Ajusta a posição horizontal */
+    
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold;
+    font-family: sriracha;
+    text-indent: 17px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor leitura */
+    padding: 10px;
+}
+.container-imagem {
+    position: relative;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.container-imagem img {
+    width: 100%;
+    display: block;
+}
