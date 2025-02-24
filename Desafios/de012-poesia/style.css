@@ -22,6 +22,7 @@ h1 {
     text-align: center;
     margin-bottom: -10px;
     margin-top: 7px;
+    font-size: 10vw;
 }
 
 h2 {
@@ -35,8 +36,9 @@ h2 {
 p {
     font-family: sriracha;
     text-indent: 17px;
-    margin-right: 200px;
-    margin-bottom: 200px;
+    font-size: 3.5vw;
+    margin-bottom: 100px;
+    padding-left: 30px;
 }
 
 a {
@@ -63,22 +65,25 @@ a:hover{
     top: 0%; /* Ajusta a posição vertical */
     left: 0%; /* Ajusta a posição horizontal */
     
+    
     color: white; /* Cor do texto */
-    font-size: 20px; /* Tamanho da fonte */
+    font-size: 3,5vw; /* Tamanho da fonte */
     font-weight: bold;
     font-family: sriracha;
     text-indent: 17px;
-    margin-right: 200px;
-    margin-bottom: 200px;
+    
+    
     background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor leitura */
     padding: 10px;
+    padding-left: 30px;
 }
 .container-imagem {
     position: relative;
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    
 }
 .container-imagem img {
     width: 100%;
-    display: block;
+    
 }
