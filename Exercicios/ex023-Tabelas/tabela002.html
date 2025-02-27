@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption{
+            font-size: 1.em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        /*Como fixar o cabeçalho mesmo se descer a rolagem*/
+        thead > tr > th{ 
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(230, 238, 147);
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(211, 212, 201);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para Tabelas Grandes
+        Table
+            Thead
+                TR, TD, TH
+            Tbody
+                TR, TD TH
+            Tfoot
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.256.934</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">23.567.400</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">45.506.908</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>154.345.209</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad suscipit sapiente, neque fuga possimus beatae illum expedita magnam quod voluptates ab, ex maxime qui? Odit eos magnam culpa amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi beatae praesentium aut quod nisi. Possimus dignissimos, eaque expedita nihil corporis ipsa itaque odio incidunt ducimus repellat? Fugiat, molestias error!</p>
+</body>
+</html>

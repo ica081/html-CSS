@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        caption{
+            background-color: lightgrey;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 1px; 
+        }
+
+        col.cnome{
+            background-color: aliceblue;
+        }
+
+        col.csexo{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Excercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Geovana</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Nutricionista</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Taxista</td>
+        </tr>
+        <tr>
+            <td>Roberto</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Pediatra</td>
+        </tr>
+    </table>
+</body>
+</html>
