@@ -15,7 +15,7 @@
     }
 
     main::after{
-        content: 'Essa impressão foi feita através do site curso em video';
+        content:'Essa impressão foi feita através do site curso em video';
     }
 
     main h1{
