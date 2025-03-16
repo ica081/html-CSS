@@ -16,17 +16,35 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div#um{
+            flex-basis: 150px;
             flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#dois{
+            flex-basis: 150px;
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        div#tres{
+            flex-basis: 150px;
+            flex-shrink: 2;
             flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima modi atque ipsum commodi. Maiores sit error consequatur sequi reiciendis placeat, beatae soluta odit dolorum? Sit blanditiis illum id pariatur.</div>
-        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, incidunt nam quam voluptatem libero laudantium accusantium eius cum eos debitis ipsa esse expedita ullam et sapiente a nobis corrupti ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam et ullam excepturi voluptas consequatur, repellendus dignissimos vitae, eligendi dolorem voluptate earum blanditiis possimus, rerum architecto autem nihil. Necessitatibus, quam odio.</div>
-        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur, mollitia reprehenderit sunt quidem consequatur enim obcaecati autem. Nesciunt quas a sit, repellendus tempora ullam. Rerum autem expedita corporis repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos veniam libero quidem hic nihil aliquid mollitia unde nostrum adipisci, aperiam expedita magni corrupti cum temporibus in. Esse, voluptatibus quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis, neque, amet odit quod voluptas saepe eius obcaecati optio, doloremque sit vitae esse nam doloribus deserunt iste assumenda dolorem asperiores.</div>
+        <div class="item" id="um">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima modi atque ipsum commodi. Maiores sit error consequatur sequi reiciendis placeat, beatae soluta odit dolorum? Sit blanditiis illum id pariatur.</div>
+        <div class="item" id="dois">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, incidunt nam quam voluptatem libero laudantium accusantium eius cum eos debitis ipsa esse expedita ullam et sapiente a nobis corrupti ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam et ullam excepturi voluptas consequatur, repellendus dignissimos vitae, eligendi dolorem voluptate earum blanditiis possimus, rerum architecto autem nihil. Necessitatibus, quam odio.</div>
+        <div class="item" id="tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur, mollitia reprehenderit sunt quidem consequatur enim obcaecati autem. Nesciunt quas a sit, repellendus tempora ullam. Rerum autem expedita corporis repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos veniam libero quidem hic nihil aliquid mollitia unde nostrum adipisci, aperiam expedita magni corrupti cum temporibus in. Esse, voluptatibus quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis, neque, amet odit quod voluptas saepe eius obcaecati optio, doloremque sit vitae esse nam doloribus deserunt iste assumenda dolorem asperiores.</div>
         
     </div>
 </body>
